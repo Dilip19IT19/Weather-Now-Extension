@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "WeatherNow",
+  "description": "A chrome extension which gives you the weather information about the any location on the earth",
+  "version": "0.0.1",
+  "action": {
+    "default_popup": "index.html"
+    
+  },
+  "icons":{
+    "48":"./images/48.png",
+    "32":"./images/32.png",
+    "16":"./images/16.png"
+  },
+  "permissions": ["geolocation"]
+}

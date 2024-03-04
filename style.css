@@ -1,0 +1,278 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.container
+{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.pending
+{
+  
+  width: 200px;
+  min-height: 30px;
+  border: 1px solid black;
+  background-color:rgba(97, 183, 159, 0.992);
+  color: rgb(10, 31, 193);
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  padding-top:5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.error
+{
+  
+  width: 200px;
+  min-height: 30px;
+  border:none;
+  background-color:rgba(244, 66, 66, 0.304);
+  color: rgb(186, 10, 10);
+  text-align: center;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.input_box
+{
+  
+  min-width: 350px;
+  min-height:240px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 15px rgb(0, 0, 0,0.4);
+ 
+  background-color: rgb(4, 48, 131);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title
+{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-left: 15px;
+  margin-right: 15px;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color:rgb(3, 142, 248);
+  font-weight: bolder;
+  border-bottom: 3px solid white;
+  padding-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text_box
+{
+  
+  width:250px;
+  height: 45px;
+  text-align: center;
+  background-color:rgb(0, 0, 0,0.5);
+  color: ghostwhite;
+  font-size: 1rem;
+  
+  border: none;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.text_box::placeholder
+{
+  color:rgb(137, 134, 134);
+}
+.btn
+{
+  
+  width:250px;
+  height: 45px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  outline-style: none;
+  border: 1px solid rgba(0, 98, 255, 0.726);
+  font-size: 0.9rem;
+  transition: all 0.3s ease-in-out;
+  color: rgb(0, 98, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover
+{
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(0, 98, 255);
+  color: rgb(237, 230, 230);
+}
+
+.separator
+{
+  
+  background-color: rgb(78, 173, 224);
+  width: 45px;
+  height: 22px;
+  margin: 10px 0px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+ 
+}
+
+
+.weather_box_active>img
+{
+  width: 100px;
+  
+}
+
+.main
+{
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+  align-items: center;
+}
+
+.temp
+{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+.temp>p{
+  font-size: 1.8rem;
+  color: rgb(132, 133, 133);
+  font-family: cursive;
+}
+.temp>img{
+  width: 20px;
+  
+}
+
+.location_active
+{
+  display: flex;
+  margin: 17px;
+  font-size: 1.1rem;
+  text-align: center;
+ font-weight: bold;
+ font-family: 'Poppins', sans-serif;
+ 
+}
+.location_active>img{
+  width: 20px;
+  margin-right: 5px;
+
+}
+
+.cond_active
+{
+  font-size: 17px;
+  color: wheat;
+  font-family: 'Poppins', sans-serif;
+}
+
+.celsius
+{
+  width: 34px;
+  height: 26px;
+}
+
+.buttom_part_active
+{
+  border-top: 1px solid black;
+  width: 20rem;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  
+}
+
+.feel img{
+  width: 17px;
+}
+
+.part1,.part2
+{
+  display: flex;
+  margin: 15px 0px;
+  color: white;
+  
+}
+
+.part1>img{
+  margin:0px 5px;
+  
+}
+
+.part2>img{
+  margin:0px 5px ;
+}
+
+.feel{
+  font-size:1.2rem;
+  color: rgb(77, 77, 78);
+  font-weight: bold;
+}
+
+.feel>img{
+  width: 12px;
+  
+}
+
+.text1
+{
+  font-size: 17px;
+  color: rgb(14, 90, 214);
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.humid
+{
+  font-size: 1.2rem;
+  color: rgb(77, 77, 78) ;
+  font-weight: bold;
+}
+.text2
+{
+  font-size: 17px;
+  color: rgb(14, 90, 214);
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.part2>img{
+  margin: 0px 3px;
+}
+
+
+footer{
+  text-align: center;
+  font-family: cursive;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0,0.7);
+}
