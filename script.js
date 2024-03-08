@@ -101,42 +101,15 @@ function requestApi(city)
   
 }
 
-locationbtn.addEventListener("click",function(){
-  if(navigator.geolocation)
-  {
-    navigator.geolocation.getCurrentPosition(onSuccess,onError);
-  }
-  else
-  {
-    alert("Your browser does not support geolocation API");
-  }
+locationbtn.addEventListener("click",async function(){
+  
+  const res=await fetch(`https://api.ipify.org/?format=json`);
+  const data=await res.json();
+  const ip=data.ip;
+  const res2=await fetch(`https://ipinfo.io/${ip}/geo`);
+  const data2=await res2.json();
+  const city=data2.city;
+  requestApi(city);
 })
 
-function onError(err)
-{
-  info.classList.add("error");
-  info.innerHTML=err.message;
-}
 
-function onSuccess(position)
-{
-  let coordinates=position.coords;
-  let lat=coordinates.latitude;
-  let long=coordinates.longitude;
-  
-  API_KEY="8deb412534dc453c94d6ec04b9dc78f7";
-  fetch(`https://api.opencagedata.com/geocode/v1/json?q=${lat}+${long}&key=${API_KEY}`)
-  .then((response)=>{
-    return response.json();
-  })
-  .then((data)=>
-  {
-    let city=data.results[0].components.city;
-
-
-    requestApi(city);
-    
-    
-  })
-
-}
