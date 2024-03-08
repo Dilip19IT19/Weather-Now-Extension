@@ -2,14 +2,25 @@ let input=document.querySelector(".text_box");
 let info=document.querySelector(".info");
 let locationbtn=document.querySelector(".btn");
 
-input.addEventListener("keyup",function(e)
-{
 
-  if(e.key=='Enter' && input.value!='')
+input.addEventListener("keydown",function(e)
+{
+  
+
+  if(e.key=='Enter' && input.value!='' )
   {
     
     requestApi(input.value);
+  
   }
+  else if(e.key=='Backspace' && input.value!='')
+  {
+    let element=document.querySelector(".main");
+    
+    element.innerHTML=""
+    
+  }
+ 
   
 })
 
@@ -44,10 +55,8 @@ function requestApi(city)
       let weathor_icon=weather_condition.toLowerCase();
       
 
-      let input_box=document.querySelector(".input_box");
-      let element=document.createElement("div");
-      element.classList.add("main");
-      input_box.append(element);
+     
+      let element=document.querySelector(".main");
       element.innerHTML=`
       
       <div class="weather_box weather_box_active">
