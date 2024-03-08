@@ -179,6 +179,7 @@
   text-align: center;
  font-weight: bold;
  font-family: 'Poppins', sans-serif;
+ color: rgb(197, 197, 204);
  
 }
 .location_active>img{
@@ -234,7 +235,7 @@
 
 .feel{
   font-size:1.2rem;
-  color: rgb(77, 77, 78);
+  color: rgb(197, 197, 204);
   font-weight: bold;
 }
 
@@ -254,7 +255,7 @@
 .humid
 {
   font-size: 1.2rem;
-  color: rgb(77, 77, 78) ;
+  color: rgb(197, 197, 204) ;
   font-weight: bold;
 }
 .text2
